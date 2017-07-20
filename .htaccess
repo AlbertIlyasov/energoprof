@@ -1,0 +1,11 @@
+AddDefaultCharset utf-8
+RewriteEngine on
+#RewriteRule ^\?(.*)?$ index.php?controller=main [L]
+RewriteRule ^templates/(.+)?$ templates/$1 [L]
+RewriteRule ^styles/(.+)?$ styles/$1 [L]
+RewriteRule ^js/(.+)?$ js/$1 [L]
+
+#RewriteRule ^(.*)$ index.php?query=$1 [L]
+RewriteRule ^([^/\.]+)?$ index.php?controller=$1 [L]
+RewriteRule ^([^/\.]+)/([^/\.]*)/*(.*)?$ index.php?controller=$1&action=$2&$3 [L]
+php_flag display_errors on

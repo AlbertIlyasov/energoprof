@@ -1,0 +1,14 @@
+textarea {
+	background: cornsilk;
+	border: 1px solid black;
+}
+
+textarea[name="text"] {
+	width: 100%;
+	height: 130px;
+}
+
+textarea.debug {
+	width: 100%;
+	height: 130px;
+}

@@ -1,0 +1,6 @@
+<?
+
+class MainModel extends Model
+{
+	
+}
