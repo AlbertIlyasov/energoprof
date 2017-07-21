@@ -4,14 +4,12 @@ class Pages extends Controller
 {
 	public function index()
 	{
-		$auth = new AuthModel();
-		if (!$auth->check()) {
+		if (!AuthModel::check()) {
 			Helper::go('auth');
 		}
-
+		
 		$this->view->set(array(
-			'title'  => 'Страницы',
-			'errors' => $errors,
+			'title'  => 'Страницы сайта',
 		))->render();
 
 		return $this;

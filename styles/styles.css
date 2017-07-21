@@ -1,3 +1,11 @@
 .errors {
 	color: red;
 }
+
+textarea.pageBody {
+	height: 500pt;
+}
+
+div.msg {
+	color: green;
+}

@@ -2,4 +2,5 @@
 
 class PagesModel extends Model
 {
+	
 }

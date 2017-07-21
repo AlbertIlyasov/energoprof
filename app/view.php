@@ -51,8 +51,10 @@ class View
 
 			echo '</textarea><hr>';
 		}
-		include($this->getViewFilename());
-		$out = ob_get_clean();
+		if (file_exists($this->getViewFilename())) {
+			include($this->getViewFilename());
+		}
+		$out = $out.ob_get_clean();
 		ob_end_clean();
 
 		include($this->getTemplateFilename());
@@ -67,6 +69,13 @@ class View
 		}
 		Header('Content-Type: text/xml');
 		echo $xml;
+		return $this;
+	}
+
+
+	public function setNoViewFilename()
+	{
+		$this->_viewFilename = null;
 		return $this;
 	}
 

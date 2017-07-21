@@ -57,7 +57,7 @@ class AuthModel extends Model
 	}
 
 
-	public function check()
+	static public function check()
 	{
 		if ($_SESSION['userId']) {
 			return true;

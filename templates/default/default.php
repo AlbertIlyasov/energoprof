@@ -51,7 +51,8 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="<?=URL?>auth">Вход</a>
-            <li><a href="<?=URL?>pages">Страницы</a>
+            <li><a href="<?=URL?>pages">Cтраницы</a>
+            <li><a href="<?=URL?>page">Добавить страницу</a>
             <li><a href="<?=URL?>logout">Выход</a>
           </ul>
         </div><!--/.nav-collapse -->
